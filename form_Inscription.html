@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MaGang</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style_formInscription.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content" id="sign">
+                <div class="signup-img">
+                    <img src="images/essai_inscription.jpg" alt="">
+                    <div class="signup-img-content">
+                        <h2>Inscris-toi </h2>
+                        <p>Et fais partie de MaGanG !</p>
+
+                    </div>
+                </div>
+                <div class="signup-form">
+                    <form class="contactForm" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="nom" class="required">Nom</label>
+                                    <input type="text" placeholder="Nom" id="nom_champ" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="prenom" class="required">Prénom</label>
+                                    <input type="text" placeholder="Prénom" id="prenom_champ" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="adresse" class="required">Adresse</label>
+                                    <input type="text" placeholder="Adresse" id="adresse_champ" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="ville" class="required">Ville</label>
+                                    <input type="text" placeholder="Ville" id="ville_champ" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="cp" class="required">Code Postal</label>
+                                    <input type="text" placeholder="Code Postal" id="cp_champ" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-checkbox">
+                                    <div class="label-flex">
+                                        <label for="activités">Activités Favorites</label>
+                                    </div>
+                                    <div class="form-checkbox-group">
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="hockey" name="hockey" id="hockey" checked>
+                                            <label for="hockey">Hockey</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="soccer" name="soccer" id="soccer">
+                                            <label for="soccer">Soccer</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="volley" name="volley" id="volley">
+                                            <label for="volley">Volley</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="tennis" name="tennis" id="tennis">
+                                            <label for="tennis">Tennis</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-checkbox-group">
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="basketball" name="basketball" id="basketball">
+                                            <label for="basketball">Basketball</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="handball" name="handball" id="handball">
+                                            <label for="handball">Handball</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="boxe" name="boxe" id="boxe">
+                                            <label for="boxe">Boxe</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-checkbox-item">
+                                            <input type="checkbox" class="checks" value="course" name="course" id="course">
+                                            <label for="course">Course</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-radio">
+                                    <div class="label-flex">
+                                        <label for="confid">Confidentialité</label>
+                                    </div>
+                                    <div class="form-radio-group">
+                                        <div class="form-radio-item">
+                                            <input type="radio" class="radio" value="public" name="confid" id="public" checked>
+                                            <label for="public">Public</label>
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <input type="radio" class="radio" value="privé" name="confid" id="prive">
+                                            <label for="prive">Privé</label>
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-input">
+                                    <label for="photo">Ajouter une photo de profil</label>
+                                    <input type="file" placeholder="Bureau/" id="cheminPhoto_champ" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="email" placeholder="email" id="email_champ" required/>
+                                </div>
+                                <div class="form-input">
+                                    <label for="Mot de passe" class="required">Mot de passe</label>
+                                    <input type="password" placeholder="Mot de passe" id="motdepasse_champ" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" value="Enregistrer" class="submit" id="submit" name="submit" onclick="submitForm()">Enregistrer</button>
+                        </div>
+                        <!-- <div class="col-12 col-12 mb-3 text-center"> -->
+                        <!-- <img id="img" src="images/addIcon.png" alt="avatar icon"> -->
+                        <!-- </div>  -->
+                    </form>
+
+                    <div class="alert">Votre compte a été créé</div>
+                </div>
+                <div id="outputDiv" style="color: rgb(42, 69, 94);"> </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> -->
+    <script src="index_form_inscription.js"></script>
+
+    <!-- JS BOOTSTRAP-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/main_form_Insc_Bootstrap.js"></script>
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
